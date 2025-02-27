@@ -66,19 +66,19 @@ pipeline {
     }
     }
 }
- post {
-        success {
-            mail to: 'gargmohit.vishnuprasad@iiitb.ac.in',
-                 subject: "Application Deployment SUCCESS: Build ${env.JOB_NAME} #${env.BUILD_NUMBER}",
-                 body: "The build was successful!"
-        }
-        failure {
-            mail to: 'gargmohit.vishnuprasad@iiitb.ac.in',
-                 subject: "Application Deployment FAILURE: Build ${env.JOB_NAME} #${env.BUILD_NUMBER}",
-                 body: "The build failed."
-        }
-        always {
-            cleanWs()
-        }
-      }
+//  post {
+//         success {
+//             mail to: 'gargmohit.vishnuprasad@iiitb.ac.in',
+//                  subject: "Application Deployment SUCCESS: Build ${env.JOB_NAME} #${env.BUILD_NUMBER}",
+//                  body: "The build was successful!"
+//         }
+//         failure {
+//             mail to: 'gargmohit.vishnuprasad@iiitb.ac.in',
+//                  subject: "Application Deployment FAILURE: Build ${env.JOB_NAME} #${env.BUILD_NUMBER}",
+//                  body: "The build failed."
+//         }
+//         always {
+//             cleanWs()
+//         }
+//       }
     }
