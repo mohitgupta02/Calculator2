@@ -46,5 +46,3 @@ class CalculatorTest {
         assertEquals(0.0, calculator.power(0, 5), 0.0001);  // 0^n = 0 for n > 0
     }
 }
-
-//dcbdk
